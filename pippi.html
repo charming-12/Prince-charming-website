@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore the World</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    header, nav {
+      background-color: #1e3d59;
+      color: white;
+      padding: 15px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 15px 0;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #eef2f3;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin-top: 10px;
+    }
+    .card a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #1e3d59;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    footer {
+      background: #1e3d59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .icons i {
+      margin: 0 8px;
+    }
+    .hero{
+        background-image:url("nice.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px;
+        color: white;
+    }
+    .overlay{
+        background-color: rgba(0,0,0,0.05);
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .hero section h2,
+    .hero section p{
+        color:#1a1a40;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(255,255,255,0,6);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><i class="fas fa-globe"></i> Explore World</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="overlay">
+        <img src="man.jpg" alt="profile picture" />
+        <h2><strong>Welcome, I'm [prince]</strong></h2>
+        <p>Join me as we explore the most amazing places on Earth — nature, cities, culture, and adventure await!</p>
+    </div>
+  </section>
+
+  <!-- Featured Destinations -->
+  <section id="destinations">
+    <h2>Top Travel Destinations</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="jogoo.jpg" alt="Paris">
+        <h3>Paris, France</h3>s
+        <p>The city of lights and love. Famous for the Eiffel Tower and art museums.</p>
+        <a href="https://en.parisinfo.com/" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <img src="kero.jpg" alt="Maldives">
+        <h3>Maldives</h3>
+        <p>Crystal-clear waters and luxurious resorts on white sandy beaches.</p>
+        <a href="https://www.visitmaldives.com" target="_blank">Visit Maldives</a>
+      </div>
+      <div class="card">
+        <img src="bigup.jpg" alt="Mount Kilimanjaro">
+        <h3>Mount Kilimanjaro, Tanzania</h3>
+        <p>Africa’s highest peak, perfect for hiking and scenic adventures.</p>
+        <a href=" https://en.wikipedia.org/wiki/Mount_Kilimanjaro " target="_blank">Explore Kilimanjaro</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Why Travel?</h2>
+    <p>Travel enriches your life, opens your mind, and connects you with cultures and people across the globe. Whether you love ancient ruins, natural wonders, or modern cities — there’s always somewhere new to discover!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow me: 
+      <span class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </span>
+    </p>
+    <p>© 2025 Explore World | Created by [prince]</p>
+  </footer>
+
+</body>
+</html>
